@@ -1,0 +1,108 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:  hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'outfit',sans-serif;
+}
+.main{
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  width: 275px;
+  padding: 1.5rem;  
+}
+.image{
+    position: relative;
+}
+.image div{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.image div:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.image div img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mainImage{
+    width: 100%;
+    height: 100%;
+}
+h3{
+    font-size: 20px;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+.discription{
+    margin: 0.2rem 0 0.5rem 0;
+    line-height: 28px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+.price-days{
+    display: flex;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid  hsl(215, 51%, 70%) ;
+
+}
+.price{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: hsl(178, 100%, 50%);
+}
+.price img{
+    margin-right: 5px;
+}
+.days{
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+}
+.days img{
+    margin-right: 1px;
+}
+.creater{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+.avatar{
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 1rem;
+    width: 30px;
+}
+span{
+    color: white;
+    margin-left: 5px;
+}
+.mainImage, h3, span{
+    cursor: pointer;
+}
+h3:hover, span:hover{
+    color: hsl(178, 100%, 50%);
+}
